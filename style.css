@@ -1,4 +1,4 @@
-/* General Reset */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -11,15 +11,11 @@ body {
     color: #333;
     background: #f4f4f4;
     line-height: 1.6;
-    padding: 20px;
     text-align: center;
+    padding: 20px;
 }
 
 /* Header Styling */
-header {
-    margin-bottom: 20px;
-}
-
 h1 {
     font-size: 3em;
     color: #4A90E2;
@@ -28,27 +24,22 @@ h1 {
 .slogan {
     font-size: 1.2em;
     color: #555;
+    margin-bottom: 20px;
 }
 
 /* About Section */
 #about {
-    margin: 20px auto;
-    max-width: 600px;
+    margin-bottom: 20px;
 }
 
-/* Why Choose Section */
-#why-choose {
+/* Features Section */
+#features {
     background: #eaf0f7;
     padding: 20px;
     border-radius: 10px;
-    margin: 20px auto;
-    max-width: 800px;
-}
-
-.features {
+    margin-bottom: 20px;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
 }
 
@@ -65,8 +56,14 @@ h1 {
     background: #dff6dd;
     padding: 15px;
     border-radius: 10px;
-    margin: 20px auto;
-    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+/* Total Minted Styling */
+#total-minted {
+    font-size: 2em;
+    color: #4A90E2;
+    font-weight: bold;
 }
 
 /* Footer Styling */
