@@ -1,0 +1,77 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background: #f4f4f4;
+    line-height: 1.6;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header Styling */
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    color: #4A90E2;
+}
+
+.slogan {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* About Section */
+#about {
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+/* Why Choose Section */
+#why-choose {
+    background: #eaf0f7;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.feature-item {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+/* Tokenomics Section */
+#tokenomics {
+    background: #dff6dd;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #555;
+}
