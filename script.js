@@ -1,7 +1,10 @@
-document.addEventListener("DOMContentLoaded", () => {
-    let totalMinted = 1; // Başlanğıc dəyər
-    setInterval(() => {
-        totalMinted++;
-        document.getElementById("totalMinted").textContent = totalMinted;
-    }, 3000); // Hər 3 saniyədə bir artır
-});
+// Mint olunan token sayını artıra bilərik
+let tokenCount = 1;
+
+function mintNewToken() {
+    tokenCount++;
+    document.getElementById('mintCount').innerText = tokenCount;
+}
+
+// Saniyədə 1 dəfə token yaratsın (demo üçün)
+setInterval(mintNewToken, 1000);
