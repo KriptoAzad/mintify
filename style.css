@@ -1,74 +1,82 @@
-/* Reset */
+/* Sıfırlama və ümumi stil */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styling */
 body {
     font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
     color: #333;
-    background: #f4f4f4;
     line-height: 1.6;
+    padding: 20px;
+}
+
+/* Başlıq */
+header {
     text-align: center;
-    padding: 20px;
+    margin-bottom: 20px;
 }
 
-/* Header Styling */
 h1 {
-    font-size: 3em;
-    color: #4A90E2;
+    color: #2d89ef;
+    font-size: 2.5rem;
 }
 
-.slogan {
-    font-size: 1.2em;
-    color: #555;
-    margin-bottom: 20px;
-}
-
-/* About Section */
-#about {
-    margin-bottom: 20px;
-}
-
-/* Features Section */
-#features {
-    background: #eaf0f7;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-.feature-item {
+/* Bölmələr */
+section {
     background: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 30%;
-}
-
-/* Tokenomics Section */
-#tokenomics {
-    background: #dff6dd;
-    padding: 15px;
-    border-radius: 10px;
     margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Total Minted Styling */
-#total-minted {
-    font-size: 2em;
-    color: #4A90E2;
+/* Kartlar üçün layout */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.feature {
+    background: #e3f2fd;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
     font-weight: bold;
 }
 
-/* Footer Styling */
+/* Tokenomika bölməsi */
+#tokenomics {
+    background-color: #e8f5e9;
+    color: #1b5e20;
+}
+
+#roadmap p {
+    margin: 5px 0;
+}
+
+/* Ayaq hissəsi */
 footer {
-    margin-top: 20px;
-    font-size: 0.8em;
+    text-align: center;
+    font-size: 0.9rem;
     color: #555;
+}
+
+/* Mobil uyğunluğu */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    .feature {
+        padding: 10px;
+    }
 }
