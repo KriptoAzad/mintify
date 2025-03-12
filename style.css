@@ -1,82 +1,69 @@
-/* Sıfırlama və ümumi stil */
-* {
+/* Ümumi Stildər */
+body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
-    padding: 20px;
 }
 
-/* Başlıq */
+/* Header */
 header {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-h1 {
-    color: #2d89ef;
-    font-size: 2.5rem;
-}
-
-/* Bölmələr */
-section {
-    background: #fff;
-    margin-bottom: 20px;
+    background-color: #EAF0FB;
+    color: #1A73E8;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-/* Kartlar üçün layout */
-.features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-    margin-top: 10px;
+/* Haqqında bölməsi */
+.about, .why, .tokenomics, .roadmap {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Niyə Mintify seçilməlidir? */
+.why .features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .feature {
-    background: #e3f2fd;
-    padding: 15px;
-    border-radius: 8px;
-    text-align: center;
-    font-weight: bold;
+    background-color: #FFF;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Tokenomika bölməsi */
-#tokenomics {
-    background-color: #e8f5e9;
-    color: #1b5e20;
+.tokenomics {
+    background-color: #D4F4C4;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-#roadmap p {
-    margin: 5px 0;
+/* Yol Xəritəsi */
+.roadmap {
+    background-color: #FFF3CD;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Ayaq hissəsi */
+/* Footer */
 footer {
     text-align: center;
-    font-size: 0.9rem;
+    padding: 10px;
+    background-color: #EAF0FB;
     color: #555;
-}
-
-/* Mobil uyğunluğu */
-@media (max-width: 600px) {
-    h1 {
-        font-size: 1.8rem;
-    }
-
-    section {
-        padding: 10px;
-    }
-
-    .feature {
-        padding: 10px;
-    }
 }
